@@ -44,7 +44,7 @@ class SomeController
      */
     public function someAction() {
         throw new ApiProblemException(
-            new HttpApiProblem('400', 'It aint all bad ...')
+            new HttpApiProblem(400, ['detail' => 'It aint all bad ...'])
         );
     }
 }
